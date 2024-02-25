@@ -1,5 +1,5 @@
 import React,{useState, useEffect} from "react";
-import axios from 'axios';
+// import axios from 'axios';
 import '../App.css';
 
 
@@ -7,14 +7,14 @@ import '../App.css';
 const Drivers = () => {
   const [drivers, setDrivers] = useState([]);
 
-  useEffect(() => {
-    getDrivers();
-    }, []);
+  // useEffect(() => {
+  //   getDrivers();
+  //   }, []);
 
-  const getDrivers = async () => {
-      const response = await axios.get('http://localhost:5000/drivers');
-      setDrivers(response.data);
-  }
+  // const getDrivers = async () => {
+  //     const response = await axios.get('http://localhost:5000/drivers');
+  //     setDrivers(response.data);
+  // }
 
 
   const [search, setNewSearch] = useState("");
